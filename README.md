@@ -8,15 +8,15 @@ Welcome to my personal website and portfolio. This site was built to showcase my
 
 - **Home**: Short introduction
 - **Portfolio**: Projects and case studies
-- **Contact**: Links to my email, LinkedIn, and GitHub
+- **Resume**: Link to view or download resume
+- **Contact**: Links to email, LinkedIn, and GitHub
 
 ---
 
 💻 Technologies Used
 
-- HTML5 & CSS3
+- HTML5 & CSS
 - GitHub Pages for hosting
-- Google Fonts: Fira Code
 - Responsive design for desktop and mobile
 
 ---
