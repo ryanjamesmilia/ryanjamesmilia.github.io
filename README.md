@@ -16,7 +16,7 @@ Welcome to my personal website and portfolio. This site was built to showcase my
 
 - HTML5 & CSS3
 - GitHub Pages for hosting
-- Google Fonts: Fira Code (programming-style font)
+- Google Fonts: Fira Code
 - Responsive design for desktop and mobile
 
 ---
