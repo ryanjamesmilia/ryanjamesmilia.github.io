@@ -1,66 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan James Milia | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#" onclick="showSection('home')">Home</a></li>
-      <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
-      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
-    </ul>
-  </nav>
 
-<!-- HOME (Visible by default) -->
-<div id="home">
-  <h1>Ryan James Milia | Geospatial Data Analytics & Forest Technology</h1>
-  <p>
-    I am a dedicated forestry and geospatial professional with over 5 years of experience in natural resource management. My expertise combines technical skills in forest engineering, GIS, and data analytics with practical field experience. I have a strong background in using specialized software to support resource planning and management decisions.
-  </p>
-  <p>
-    As a Registered Forest Technologist (RFT) and geospatial data analyst, I am committed to leveraging GIS and data analytics to make informed, sustainable decisions in the forestry and environmental sectors.
-  </p>
-  <p>
-    To learn more about my experience at COGS, click <a href="#cogs-experience" onclick="showSection('cogs-experience')">here</a> to read about my academic projects and professional growth.
-  </p>
-</div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+        <li><a href="#" onclick="showSection('cogs')">COGS Experience</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- COGS Experience Content -->
-<div id="cogs" style="display:none;">
-  <h2>COGS Experience</h2>
-  <p>
-    At the Centre of Geographic Sciences (COGS), I advanced my geospatial data analytics skills and built a strong foundation in GIS, programming, and data analytics. With a background in forestry and vegetation management, I sought to deepen my understanding of how GIS and data analytics intersect with natural resource management. The program helped me refine my technical skills in Python, R programming, SQL, and spatial database management, while also strengthening my ability to create high-quality maps and analyze geospatial data.
-  </p>
-  <p>
-    Throughout the program, I enjoyed applying programming to real-world projects, such as my habitat suitability model for the Northern Goshawk, which helped me develop advanced techniques in ArcGIS Pro, including batch processing and careful parameter setting for time-intensive operations. The process reinforced the importance of data preparation and exploration, which are critical for successful geospatial analysis. I also gained hands-on experience with data visualization, statistical analysis, and spatial modeling, which will serve me well in future roles.
-  </p>
-  <p>
-    The integration of GIS with environmental data analytics, combined with my extensive fieldwork experience, has allowed me to gain deeper insights into forest and vegetation management. This holistic approach to data analytics aligns with my goal of utilizing GIS to support environmental planning and decision-making. As I continue to finalize my habitat model, I am excited to apply these skills to my career, where I plan to leverage both my forestry background and new GIS knowledge to drive better, data-driven decisions in environmental management.
-  </p>
-  <a href="#home">Back to Home</a>
-</div>
+  <div class="container">
 
-  <!-- Home Button -->
-  <button onclick="showSection('home')">Back to Home</button>
-</div>
+    <!-- HOME (Visible by default) -->
+    <div id="home">
+      <h1>Ryan James Milia | Geospatial Data Analytics & Forest Technology</h1>
+      <p>
+        I am a dedicated forestry and geospatial professional with over 5 years of experience in natural resource management. My expertise combines technical skills in forest engineering, GIS, and data analytics with practical field experience. I have a strong background in using specialized software to support resource planning and management decisions.
+      </p>
+      <p>
+        As a Registered Forest Technologist (RFT) and geospatial data analyst, I am committed to leveraging GIS and data analytics to make informed, sustainable decisions in the forestry and environmental sectors.
+      </p>
+      <p>
+        To learn more about my experience at COGS, click <a href="#" onclick="showSection('cogs')">here</a> to read about my academic projects and professional growth.
+      </p>
+    </div>
 
-  <!-- PORTFOLIO -->
-  <div id="portfolio" style="display: none;">
-    <h1>Portfolio</h1>
-    <p>Coming soon.</p>
+    <!-- COGS Experience Content -->
+    <div id="cogs" style="display:none;">
+      <h2>COGS Experience</h2>
+      <p>
+        At the Centre of Geographic Sciences (COGS), I advanced my geospatial data analytics skills and built a strong foundation in GIS, programming, and data analytics. With a background in forestry and vegetation management, I sought to deepen my understanding of how GIS and data analytics intersect with natural resource management. The program helped me refine my technical skills in Python, R programming, SQL, and spatial database management, while also strengthening my ability to create high-quality maps and analyze geospatial data.
+      </p>
+      <p>
+        Throughout the program, I enjoyed applying programming to real-world projects, such as my habitat suitability model for the Northern Goshawk, which helped me develop advanced techniques in ArcGIS Pro, including batch processing and careful parameter setting for time-intensive operations. The process reinforced the importance of data preparation and exploration, which are critical for successful geospatial analysis. I also gained hands-on experience with data visualization, statistical analysis, and spatial modeling, which will serve me well in future roles.
+      </p>
+      <p>
+        The integration of GIS with environmental data analytics, combined with my extensive fieldwork experience, has allowed me to gain deeper insights into forest and vegetation management. This holistic approach to data analytics aligns with my goal of utilizing GIS to support environmental planning and decision-making. As I continue to finalize my habitat model, I am excited to apply these skills to my career, where I plan to leverage both my forestry background and new GIS knowledge to drive better, data-driven decisions in environmental management.
+      </p>
+      <button onclick="showSection('home')">Back to Home</button>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio" style="display: none;">
+      <h1>Portfolio</h1>
+      <p>Coming soon.</p>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" style="display: none;">
+      <h1>Contact</h1>
+      <p>Email: ryanjamesmilia@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ryanjamesmilia/">ryanjamesmilia</a></p>
+      <p>GitHub: <a href="https://github.com/ryanjamesmilia">ryanjamesmilia</a></p>
+      <p><a href="resume.pdf" target="_blank">📄 Download My Resume</a></p>
+    </div>
+
   </div>
 
-  <!-- CONTACT -->
-  <div id="contact" style="display: none;">
-    <h1>Contact</h1>
-    <p>Email: ryanjamesmilia@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ryanjamesmilia/">ryanjamesmilia</a></p>
-    <p>GitHub: <a href="https://github.com/ryanjamesmilia">ryanjamesmilia</a></p>
-    <p><a href="resume.pdf" target="_blank">📄 Download My Resume</a></p>
-  </div>
+  <footer>
+    <p>&copy; 2025 Ryan James Milia</p>
+  </footer>
 
   <script>
     function showSection(sectionId) {
-      document.getElementById('home').style.display = 'none';
-      document.getElementById('portfolio').style.display = 'none';
-      document.getElementById('contact').style.display = 'none';
+      const sections = ['home', 'portfolio', 'cogs', 'contact'];
+      sections.forEach(id => {
+        document.getElementById(id).style.display = 'none';
+      });
       document.getElementById(sectionId).style.display = 'block';
     }
   </script>
 </body>
+</html>
