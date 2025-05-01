@@ -1,74 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ryan James Milia | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      scroll-behavior: smooth;
-    }
-    nav {
-      background-color: #333;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 4rem 2rem;
-      min-height: 100vh;
-    }
-    #home { background-color: #f9f9f9; }
-    #portfolio { background-color: #eef2f5; }
-    #contact { background-color: #f1f1f1; }
-    a {
-      color: #333;
-    }
-  </style>
-</head>
 <body>
-
   <nav>
-    <a href="#home">Home</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
+      <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+    </ul>
   </nav>
 
-  <section id="home">
-    <h1>Ryan James Milia</h1>
-    <p>Registered Forest Technologist | Geospatial Data Analytics</p>
-    <p>🌲 Experience in forest engineering and vegetation management</p>
-    <p>🌏 Skilled in GIS, data analytics, and technical fieldwork</p>
-    <p>⚙️ Python, R Programming, SQL database management</p>
-    <p>🦅 Currently working on a habitat suitability model for the Northern Goshawk</p>
-    <p>🎓 Graduate Certificate in Geospatial Data Analytics: Centre of Geographic Sciences (2025)</p>
-    <p>🎓 Diploma in Forest and Natural Areas Management: British Columbia Institute of Technology (2022)</p>
-  </section>
+  <!-- HOME (Visible by default) -->
+<!-- HOME (Visible by default) -->
+<div id="home">
+  <h1>Ryan James Milia | Geospatial Data Analytics & Forest Technology</h1>
+  <p>
+    I am a dedicated forestry and geospatial professional with over 5 years of experience in natural resource management. My expertise combines technical skills in forest engineering, GIS, and data analytics with practical field experience. I have a strong background in using specialized software to support resource planning and management decisions.
+  </p>
+  <p>
+    As a Registered Forest Technologist (RFT) and geospatial data analyst, I am committed to leveraging GIS and data analytics to make informed, sustainable decisions in the forestry and environmental sectors.
+  </p>
+  <p>
+    To learn more about my experience at COGS, click <a href="#cogs-experience" onclick="showSection('cogs-experience')">here</a> to read about my academic projects and professional growth.
+  </p>
+</div>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Coming soon — check back for project examples.</p>
-  </section>
+  <!-- PORTFOLIO -->
+  <div id="portfolio" style="display: none;">
+    <h1>Portfolio</h1>
+    <p>Coming soon.</p>
+  </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ryanjamesmilia@gmail.com">ryanjamesmilia@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/ryanjamesmilia" target="_blank">github.com/ryanjamesmilia</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">linkedin.com/in/your-linkedin</a></p>
-    <p><a href="https://github.com/ryanjamesmilia/ryanjamesmilia/blob/main/resume.pdf" target="_blank">📄 Download My Resume</a></p>
-  </section>
+  <!-- CONTACT -->
+  <div id="contact" style="display: none;">
+    <h1>Contact</h1>
+    <p>Email: ryanjamesmilia@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ryanjamesmilia/">ryanjamesmilia</a></p>
+    <p>GitHub: <a href="https://github.com/ryanjamesmilia">ryanjamesmilia</a></p>
+    <p><a href="resume.pdf" target="_blank">📄 Download My Resume</a></p>
+  </div>
 
+  <script>
+    function showSection(sectionId) {
+      document.getElementById('home').style.display = 'none';
+      document.getElementById('portfolio').style.display = 'none';
+      document.getElementById('contact').style.display = 'none';
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
 </body>
-</html>
