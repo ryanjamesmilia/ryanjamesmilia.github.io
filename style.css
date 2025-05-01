@@ -10,14 +10,20 @@ body {
 }
 
 .container {
-  width: 60%;
-  max-width: 800px;
+  width: 75%;
+  max-width: 1000px;
   min-width: 300px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: rgba(245, 245, 220, 0.95); /* Beige with opacity for readability */
+  background-color: rgba(245, 245, 220, 0.95); /* Beige with opacity */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 h1, h2, h3 {
@@ -71,8 +77,8 @@ nav a {
 }
 
 nav a:hover {
-  border-color: #AED581; /* Light green border on hover */
-  background-color: rgba(174, 213, 129, 0.2); /* Light green background */
+  border-color: #AED581;
+  background-color: rgba(174, 213, 129, 0.2);
   color: #F5F5F5;
 }
 
@@ -88,5 +94,23 @@ button {
 }
 
 button:hover {
-  background-color: #AED581; /* Light green on hover */
+  background-color: #AED581;
 }
+
+/* === Portfolio List Enhancements === */
+#portfolio ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#portfolio li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+#portfolio li:last-child {
+  border-bottom: none;
+}
+
