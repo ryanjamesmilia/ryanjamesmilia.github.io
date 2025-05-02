@@ -15,7 +15,7 @@ Welcome to my personal website and portfolio. This site was built to showcase my
 
 💻 Technologies Used
 
-- HTML5 & CSS
+- HTML & CSS
 - GitHub Pages for hosting
 - Responsive design for desktop and mobile
 
