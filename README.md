@@ -6,8 +6,8 @@ Welcome to my personal website and portfolio. This site was built to showcase my
 
 📁 Sections
 
-- **Home**: Short introduction
-- **Portfolio**: Projects and case studies
+- **Home**: introduction
+- **Portfolio**: Projects
 - **Resume**: Link to view or download resume
 - **Contact**: Links to email, LinkedIn, and GitHub
 
