@@ -1,7 +1,6 @@
 Welcome to my personal website and portfolio. This site was built to showcase my professional experience, selected geospatial and forestry-related projects, and provide contact information.
 
-🌐 <strong>Live Site</strong>: <a href="https://ryanjamesmilia.github.io" target="_blank">ryanjamesmilia.github.io</a>
-
+🌐 **Live Site**: [ryanjamesmilia.github.io](https://ryanjamesmilia.github.io){:target="_blank" rel="noopener"}
 ---
 
 📁 Sections
