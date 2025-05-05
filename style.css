@@ -108,6 +108,23 @@ button:hover {
   border-bottom: none;
 }
 
+/* === Portfolio Image Styling === */
+.portfolio-img {
+  width: 150px;
+  height: 112px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #2E7D32; /* Forest green border */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.05);
+}
+
 /* === Code Snippet Styling === */
 pre, code {
   background-color: #f5f5f5;
@@ -157,6 +174,11 @@ code {
   nav ul {
     gap: 1rem;
   }
+  
+  .portfolio-img {
+    width: 120px;
+    height: 90px;
+  }
 }
 
 /* Mobile devices (landscape) */
@@ -205,6 +227,11 @@ code {
     font-size: 1em;
     padding: 0.4rem 0.8rem;
   }
+  
+  .portfolio-img {
+    width: 100px;
+    height: 75px;
+  }
 }
 
 /* Mobile devices (portrait) */
@@ -251,5 +278,10 @@ code {
   button {
     padding: 0.4rem 0.8rem;
     font-size: 0.9em;
+  }
+  
+  .portfolio-img {
+    width: 80px;
+    height: 60px;
   }
 }
