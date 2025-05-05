@@ -99,6 +99,9 @@ button:hover {
 }
 
 #portfolio li {
+  display: flex; /* Enable horizontal layout */
+  align-items: flex-start; /* Align top of image and text */
+  gap: 1rem; /* Space between image and text */
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px dashed #ccc;
@@ -114,15 +117,34 @@ button:hover {
   height: 112px;
   object-fit: cover;
   display: block;
-  margin-bottom: 10px;
   border: 1px solid #2E7D32; /* Forest green border */
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .portfolio-img:hover {
   transform: scale(1.05);
+}
+
+/* === Text Container Styling === */
+.portfolio-text {
+  flex: 1; /* Allow text to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-text h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: #2E7D32;
+}
+
+.portfolio-text p {
+  margin: 0;
+  color: #444;
 }
 
 /* === Code Snippet Styling === */
