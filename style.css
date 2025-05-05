@@ -20,9 +20,20 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2, h3 {
+h1 {
   color: #2E7D32; /* Forest green for headings */
   text-align: center;
+}
+
+h2, h3 {
+  color: #2E7D32; /* Forest green for headings */
+  text-align: left;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  text-align: justify;
 }
 
 p {
@@ -99,9 +110,6 @@ button:hover {
 }
 
 #portfolio li {
-  display: flex; /* Enable horizontal layout */
-  align-items: flex-start; /* Align top of image and text */
-  gap: 1rem; /* Space between image and text */
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px dashed #ccc;
@@ -109,42 +117,6 @@ button:hover {
 
 #portfolio li:last-child {
   border-bottom: none;
-}
-
-/* === Portfolio Image Styling === */
-.portfolio-img {
-  width: 150px;
-  height: 112px;
-  object-fit: cover;
-  display: block;
-  border: 1px solid #2E7D32; /* Forest green border */
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  flex-shrink: 0; /* Prevent image from shrinking */
-}
-
-.portfolio-img:hover {
-  transform: scale(1.05);
-}
-
-/* === Text Container Styling === */
-.portfolio-text {
-  flex: 1; /* Allow text to take up remaining space */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.portfolio-text h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
-  color: #2E7D32;
-}
-
-.portfolio-text p {
-  margin: 0;
-  color: #444;
 }
 
 /* === Code Snippet Styling === */
@@ -196,11 +168,6 @@ code {
   nav ul {
     gap: 1rem;
   }
-  
-  .portfolio-img {
-    width: 120px;
-    height: 90px;
-  }
 }
 
 /* Mobile devices (landscape) */
@@ -249,11 +216,6 @@ code {
     font-size: 1em;
     padding: 0.4rem 0.8rem;
   }
-  
-  .portfolio-img {
-    width: 100px;
-    height: 75px;
-  }
 }
 
 /* Mobile devices (portrait) */
@@ -300,10 +262,5 @@ code {
   button {
     padding: 0.4rem 0.8rem;
     font-size: 0.9em;
-  }
-  
-  .portfolio-img {
-    width: 80px;
-    height: 60px;
   }
 }
