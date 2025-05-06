@@ -20,7 +20,7 @@
   </header>
 
   <div class="container">
-    <!-- HOME (Visible by default) -->
+    <!-- HOME -->
     <div id="home">
       <h1>Ryan James Milia</h1>
       <p>
@@ -34,7 +34,7 @@
       </p>
     </div>
 
-    <!-- COGS Experience Content -->
+    <!-- COGS Experience -->
     <div id="cogs" style="display:none;">
       <h2>COGS Experience</h2>
       <p>
@@ -54,23 +54,23 @@
       <h1>Portfolio</h1>
       <ul>
         <li>
-      <strong><a href="https://ryanjamesmilia.github.io/maxent_habitat_model/maxent_habitat_model.html" target="_blank">MaxEnt Habitat Model</a></strong><br>
+      <strong><a href="https://ryanjamesmilia.github.io/maxent_habitat_model/maxent_habitat_model.html">MaxEnt Habitat Model</a></strong><br>
       Species distribution modeling using MaxEnt and R.
     </li>
     <li>
-      <strong><a href="https://ryanjamesmilia.github.io/vri_regression_analysis/vri_regression_analysis.html" target="_blank">VRI Regression Analysis</a></strong><br>
+      <strong><a href="https://ryanjamesmilia.github.io/vri_regression_analysis/vri_regression_analysis.html">VRI Regression Analysis</a></strong><br>
       Crown closure estimation from forest inventory data using regression techniques.
     </li>
     <li>
-      <strong><a href="https://ryanjamesmilia.github.io//deep_learning_pytorch/deep_learning_pytorch.html" target="_blank">Deep Learning with PyTorch</a></strong><br>
+      <strong><a href="https://ryanjamesmilia.github.io//deep_learning_pytorch/deep_learning_pytorch.html">Deep Learning with PyTorch</a></strong><br>
       Image classification using CNNs in PyTorch.
     </li>
     <li>
-      <strong><a href="https://ryanjamesmilia.github.io/burn_severity_analysis/burn_severity_analysis.html" target="_blank">Sentinel-2 Burn Severity Analysis</a></strong><br>
+      <strong><a href="https://ryanjamesmilia.github.io/burn_severity_analysis/burn_severity_analysis.html">Sentinel-2 Burn Severity Analysis</a></strong><br>
       Post-wildfire burn mapping using Normalized Burn Ratio (NBR).
     </li>
     <li>
-      <strong><a href="https://ryanjamesmilia.github.io/urban_route_optimization/urban_route_optimization.html" target="_blank">Urban Route Optimization</a></strong><br>
+      <strong><a href="https://ryanjamesmilia.github.io/urban_route_optimization/urban_route_optimization.html">Urban Route Optimization</a></strong><br>
       Delivery route modeling using ArcGIS Pro Network Analyst and Business Analyst POI data.
     </li>
       </ul>
@@ -101,11 +101,9 @@
         document.getElementById(id).style.display = 'none';
       });
       document.getElementById(sectionId).style.display = 'block';
-      // Update the URL hash without reloading the page
       history.pushState(null, null, '#' + sectionId);
     }
 
-    // Handle page load and hash navigation
     window.onload = function() {
       const hash = window.location.hash.replace('#', '');
       const validSections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
@@ -113,7 +111,6 @@
       showSection(sectionToShow);
     };
 
-    // Handle browser back/forward navigation
     window.onpopstate = function() {
       const hash = window.location.hash.replace('#', '');
       const validSections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
