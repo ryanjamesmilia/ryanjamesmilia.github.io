@@ -126,7 +126,7 @@ pre, code {
   overflow-x: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-size: 10pt !important; /* Force smaller font size for code */
+  font-size: 10pt !important;
   line-height: 1.4;
 }
 
@@ -173,7 +173,6 @@ code {
 /* Mobile devices (landscape) */
 @media (max-width: 768px) {
   body {
-    /* Ensure background image is retained on mobile */
     background-image: url('assets/background.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -242,7 +241,7 @@ code {
   p {
     font-size: 0.95em;
     line-height: 1.5em;
-    text-align: left; /* Switch from justify to left alignment on small screens */
+    text-align: left;
   }
   
   pre, code {
