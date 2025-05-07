@@ -36,12 +36,6 @@ p {
   text-align: justify;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.8em;
-  text-align: justify;
-}
-
 a {
   color: #689F38; /* Lime green for links */
   text-decoration: none;
@@ -173,10 +167,10 @@ code {
 /* Mobile devices (landscape) */
 @media (max-width: 768px) {
   body {
-    background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: contain;
+    background-attachment: scroll;
     background-position: center;
+    background-repeat: no-repeat;
   }
   
   .container {
@@ -219,6 +213,13 @@ code {
 
 /* Mobile devices (portrait) */
 @media (max-width: 480px) {
+  body {
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
   .container {
     width: 94%;
     padding: 1rem;
