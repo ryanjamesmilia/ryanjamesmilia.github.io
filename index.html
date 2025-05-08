@@ -98,30 +98,40 @@
       <button onclick="showSection('home')">Back to Home</button>
     </div>
   </div>
+<script>
+  function showSection(sectionId) {
+    const sections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
+    sections.forEach(id => {
+      document.getElementById(id).style.display = 'none';
+    });
+    document.getElementById(sectionId).style.display = 'block';
+    
+    // Update the URL but prevent default scroll behavior
+    history.pushState(null, null, '#' + sectionId);
+    
+    // Scroll to top after changing sections
+    window.scrollTo(0, 0);
+  }
 
-  <script>
-    function showSection(sectionId) {
-      const sections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
-      sections.forEach(id => {
-        document.getElementById(id).style.display = 'none';
-      });
-      document.getElementById(sectionId).style.display = 'block';
-      history.pushState(null, null, '#' + sectionId);
-    }
+  window.onload = function() {
+    const hash = window.location.hash.replace('#', '');
+    const validSections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
+    const sectionToShow = validSections.includes(hash) ? hash : 'home';
+    showSection(sectionToShow);
+    
+    // Ensure we're at the top of the page when loading
+    window.scrollTo(0, 0);
+  };
 
-    window.onload = function() {
-      const hash = window.location.hash.replace('#', '');
-      const validSections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
-      const sectionToShow = validSections.includes(hash) ? hash : 'home';
-      showSection(sectionToShow);
-    };
-
-    window.onpopstate = function() {
-      const hash = window.location.hash.replace('#', '');
-      const validSections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
-      const sectionToShow = validSections.includes(hash) ? hash : 'home';
-      showSection(sectionToShow);
-    };
-  </script>
+  window.onpopstate = function() {
+    const hash = window.location.hash.replace('#', '');
+    const validSections = ['home', 'portfolio', 'cogs', 'resume', 'contact'];
+    const sectionToShow = validSections.includes(hash) ? hash : 'home';
+    showSection(sectionToShow);
+    
+    // Ensure we're at the top of the page when using back/forward browser buttons
+    window.scrollTo(0, 0);
+  };
+</script>
 </body>
 </html>
