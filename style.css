@@ -1,3 +1,22 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  /* Keep your existing body styles */
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /* Fix for mobile initial scroll position */
+  position: relative;
+}
+
+/* Force sections to start at the top */
+#home, #portfolio, #cogs, #resume, #contact {
+  padding-top: 1px;
+  margin-top: -1px;
+}
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
