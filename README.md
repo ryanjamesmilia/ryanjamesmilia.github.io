@@ -23,6 +23,6 @@ Welcome to my personal website and portfolio. This site was built to showcase my
 
 🔅 Purpose
 
-This website serves as a professional portfolio for potential employers and collaborators.
+- This website serves as a professional portfolio for potential employers and collaborators.
 
 ---
