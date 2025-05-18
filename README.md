@@ -23,6 +23,6 @@ Welcome to my personal website and portfolio. This site was built to showcase my
 
 🔅 Purpose
 
-This website fulfills the digital portfolio requirement for the Graduate Certificate in Geospatial Data Analytics at the Centre of Geographic Sciences (COGS). It also serves as a public professional portfolio for potential employers and collaborators.
+This website serves as a professional portfolio for potential employers and collaborators.
 
 ---
