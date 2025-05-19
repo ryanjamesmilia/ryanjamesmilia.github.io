@@ -20,9 +20,3 @@ Welcome to my personal website and portfolio. This site was built to showcase my
 - Responsive design for desktop and mobile
 
 ---
-
-🔅 Purpose
-
-- This website serves as a professional portfolio for potential employers and collaborators.
-
----
